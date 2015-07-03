@@ -42,7 +42,7 @@ end
 
 group :assets do
   gem 'therubyracer'
-
+end
   
 
 group :development, :test do
