@@ -36,6 +36,15 @@ gem 'bootstrap-sass', '~> 3.2.0'
 gem 'autoprefixer-rails'
 gem "searchkick"
 
+group :production do
+gem 'pg'
+end
+
+group :assets do
+  gem 'therubyracer'
+
+  
+
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'
