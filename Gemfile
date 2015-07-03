@@ -36,13 +36,6 @@ gem 'bootstrap-sass', '~> 3.2.0'
 gem 'autoprefixer-rails'
 gem "searchkick"
 
-group :production do
-gem 'pg'
-end
-
-group :assets do
-  gem 'therubyracer'
-end
   
 
 group :development, :test do
