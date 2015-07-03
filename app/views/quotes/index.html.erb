@@ -1,0 +1,31 @@
+<div class="container">
+<div class="jumbotron">
+<h2>Welcome to Quote.ly</h2>
+<p>Be inspired by over 75,000 quotes</p>
+
+
+	</div>
+  <div class="alert alert-info" style="color:#000;">Here are ten quotes I picked for you! (<a href="/">refresh for another 10</a>)</div>
+  <table class="table table-bordered">
+    <thead>
+      <th>Quote</th>
+      <th>Author</th>
+      <th>Type</th>
+    </thead>
+    <tbody>
+    	<% @quotes.each do |quote| %>
+    	<tr>
+    	<td>
+<%= quote.quotes %>
+    	</td>
+    	<td>
+<%= quote.author %>
+    	</td>
+    	<td>
+    	<%= quote.topic %>
+    	</td>
+</tr>
+<% end %>
+    </tbody>
+  </table>
+</div>

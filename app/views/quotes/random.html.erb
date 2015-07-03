@@ -1,0 +1,11 @@
+<div class="container">
+<div class="jumbotron">
+<% @quotey.each do |quote| %>
+<h2> <%= quote.quotes %></h2>
+<p><%= quote.author %></p>
+<%= link_to 'Show', quote_path(quote), class: "btn btn-primary" %>
+<% end %>
+	</div>
+
+
+</div>

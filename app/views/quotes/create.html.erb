@@ -1,0 +1,12 @@
+<div class="container">
+<div class="alert alert-info" style="width:75%">When submitting a quote make sure it is original and is clear of profanity. Any quotes with profane material will be removed.</div>
+
+<%= form_for @quotenew, :url => { :action => "create" } do |f| %>
+
+ Quote: <%= text_area :quotes %>
+ Author: <%= f.text_field :author %>
+ Category: <%= f.text_field :topic %>
+<% end %>
+
+
+</div>

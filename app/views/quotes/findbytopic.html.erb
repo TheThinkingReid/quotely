@@ -1,0 +1,28 @@
+<div class="alert alert-info" style="margin-left:15px;">Search for any quote! Type in any topic or word in the search and we'll grab all the quotes relating to that topic or word.</div> 
+
+ <%= form_tag search_me_path, method: :get do %>
+    <div style="margin-left:10px;" class="form-group">
+      <%= text_field_tag :query, params[:query], class: 'form-control', style: 'width:75%;' %>
+      <br />
+      <%= submit_tag 'Search', class: 'btn btn-primary' %>
+    </div>
+  <% end %>
+</div>
+<table style="width:75%;margin-left:10px;" class="table table-bordered">
+	<thead>
+		<th>Quote</th>
+		<th>Author</th>
+</thead>
+<tbody>
+
+<% @quotetopic.each do |qt| %>
+<tr>
+	<td>
+	<%= qt.quotes %>
+</td>
+<td>
+	<%= qt.author %>
+</td>
+	<% end %>
+</tr>
+</table>
